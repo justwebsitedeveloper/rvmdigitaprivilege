@@ -1,0 +1,36 @@
+// KaushanScript-Regular
+@font-face {
+    font-family: 'Kaushan Script', cursive;
+    src: url("./../../../fonts/cera-pro-regular.woff2") format("woff2"),
+      url("./../../../fonts/cera-pro-regular.woff") format("woff");
+    font-weight: 300;
+  }
+  
+// Poppins Regular and Bold
+@font-face {
+  font-family: "cera-pro";
+  src: url("./../../../fonts/cera-pro-regular.woff2") format("woff2"),
+    url("./../../../fonts/cera-pro-regular.woff") format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+    font-family: "cera-pro";
+    src: url("./../../../fonts/cera-pro-bold.woff2") format("woff2"),
+      url("./../../../fonts/cera-pro-bold.woff") format("woff");
+    font-weight: 700;
+  }
+  
+// Font Mixins
+@mixin  Kaushan-Script-regular {
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 400;
+}
+@mixin  cera-pro-regular {
+    font-family: "cera-pro";
+    font-weight: 400;
+}
+@mixin  cera-pro-bold {
+    font-family: "cera-pro";
+    font-weight: 700;
+}

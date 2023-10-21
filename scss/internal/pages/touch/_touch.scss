@@ -1,0 +1,17 @@
+.get-touch-section {
+  background-image: url("./../../../../image/touch/banner@1x.jpg");
+  height: 264px;
+}
+.touch-content {
+  text-align: center;
+  color: white;
+  @include cera-pro-bold();
+  font-size: 28px;
+  transform: translateY(120%);
+  @media screen and (max-width:600px) {
+    transform: translateY(135%);
+  }
+}
+.get-touch-section{
+    margin-bottom: 50px;
+}

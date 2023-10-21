@@ -1,0 +1,126 @@
+.service-section {
+  background-color: #f9f9f9;
+  h1 {
+    @include Kaushan-Script-regular();
+    font-size: 14px;
+    margin: 0;
+    @media screen and (max-width: 575px) {
+      margin: 0 0 0 15px;
+    }
+  }
+  h2 {
+    @include cera-pro-bold();
+    font-size: 32px;
+    margin: 0;
+    padding-bottom: 30px;
+    @media screen and (max-width: 575px) {
+      margin: 0 0 0 15px;
+    }
+  }
+  .caption {
+    h4 {
+      @include cera-pro-bold();
+      font-size: 18px;
+      margin: 0;
+      padding-top: 20px;
+      padding-bottom: 10px;
+    }
+  }
+  .underlineNxt:hover::after  {
+    content: '';
+    position: absolute;
+    width: 15%;
+    height: 2px;
+    background-color: black;
+    margin-top: 21px;
+    left: 130px;
+    @media screen and (max-width:600px) {
+      left: 100px;
+    }
+  }
+  .underlinePre:hover::after  {
+    content: '';
+    position: absolute;
+    width: 15%;
+    height: 2px;
+    background-color: black;
+    margin-top: 20px;
+    left: 7px;
+  }
+  .owl-carousel {
+    width: 105%;
+    margin-right: auto;  
+    .owl-stage {
+      display: flex;
+    }  
+    .owl-item {
+      display: flex;
+      flex: 1 0 auto;
+    }
+    .thumbnail {
+      display: flex;
+      flex-direction: column;
+      margin: 0 40px 0 0;
+      @media screen and (max-width: 575px) {
+        margin: 0 20px 0 15px;
+      }
+      .caption {
+        display: flex;
+        flex: 1 0 auto;
+        flex-direction: column;
+        .flex-text {
+          flex-grow: 1;
+        }
+      }
+    }
+    @media screen and (max-width: 600px) {
+      width: 100%;
+    }
+  }
+  .service-bg {
+    padding: 100px 0 100px 15px;
+    @media screen and (max-width:600px) {
+      padding: 70px 0 70px 0px;
+    }
+  }
+  .section-head {
+    display: flex;
+    justify-content: space-between;
+  }
+  .slide-btn {
+    display: flex;
+    align-items: center;
+    position: relative;
+    button {
+      border: none;
+      background: none;
+    }
+    h2 {
+      @include cera-pro-regular();
+      font-size: 16px;
+      padding: 0;
+      margin: 0;
+      &:hover{
+        color: rgba(0, 0, 0, 0.9);
+        text-shadow: 0 0 0.65px #333, 0 0 0.65px #333;
+      }
+    }
+    h3 {
+      @include cera-pro-regular();
+      font-size: 18px;
+      margin-left: 50px;
+      padding: 0;
+      margin-bottom: 0;
+      &:hover{
+        color: rgba(0, 0, 0, 0.9);
+        text-shadow: 0 0 0.65px #333, 0 0 0.65px #333;
+      }
+      @media screen and (max-width:600px) {
+        margin-left: 20px;
+      }
+    }
+    @media screen and (max-width: 575px) {
+      margin: 0 15px 0 0;
+    }
+  }
+}

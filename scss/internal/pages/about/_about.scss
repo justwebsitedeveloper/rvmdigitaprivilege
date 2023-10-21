@@ -1,0 +1,69 @@
+.about-section {
+  margin: 120px 0;
+  @media screen and (max-width:430px) {
+    .contact-number{
+      width: 100%;
+    }
+  }
+  @media screen and (max-width:600px) {
+    margin: 70px 0;
+  }
+  .about-details {
+    display: flex;
+    justify-content: space-between;
+    &:first-of-type {
+      align-self: center;
+    }
+    h1 {
+      @include Kaushan-Script-regular();
+      font-size: 18px;
+      margin: 0;
+    }
+    h2 {
+      @include cera-pro-bold();
+      font-size: 32px;
+      padding-bottom: 45px;
+      margin: 0;
+    }
+    p {
+      @include cera-pro-regular();
+      font-size: 16px;
+      color: #515151;
+      margin: 0;
+      &:first-of-type{
+        padding-bottom: 25px;
+      }
+    }
+  }
+  .contact-details {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    h1 {
+      @include cera-pro-bold();
+      font-size: 16px;
+    }
+    p {
+      @include cera-pro-regular();
+      color: #515151;
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and (max-width:1200px) {
+  .about-img{
+    display: none;
+  }
+  .about-info{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .contact-details{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

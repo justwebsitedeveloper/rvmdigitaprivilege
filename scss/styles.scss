@@ -1,0 +1,34 @@
+// Importing the external libraries
+@import "./external/libraries";
+
+
+
+// Base
+
+@import "./internal/base/fonts";
+
+@import "./internal/base/variables";
+
+@import "./internal/base/mixins";
+
+@import "./internal/base/base";
+
+
+// Components
+@import "./internal/components/navigation";
+@import "./internal/components/footer";
+
+// Pages
+
+// Home
+@import "./internal/pages/home/banner";
+// About
+@import "./internal/pages/about/about";
+// Services
+@import "./internal/pages/services/service";
+// Gallery
+@import "./internal/pages/gallery/gallery";
+// touch
+@import "./internal/pages/touch/touch";
+// Testimonials
+@import "./internal/pages/testimonials/testimonials";

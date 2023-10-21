@@ -1,0 +1,47 @@
+.navbar-brand{
+  @include cera-pro-bold();
+  font-size: 24px;
+}
+.nav-bar_top {
+  li {
+    a {
+      margin-left: 20px;
+      &:hover {
+        @include cera-pro-regular();
+        color: black;
+        text-shadow: 0 0 0.65px #333, 0 0 0.65px #333;
+      }
+      &:link,
+      &:visited,
+      &:active {
+        @include cera-pro-regular();
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .navbar-brand {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
+}
+.navbar-custom {
+  height: 70px;
+}
+.navbar-light .navbar-toggler {
+  color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+
+.offcanvas-end {
+  width: 250px;
+}
+
+.navbar #nav > .active > a {
+  color: black;
+  @include cera-pro-regular();
+  text-shadow: 0 0 0.65px #333, 0 0 0.65px #333;
+  // &:hover{
+  //   text-shadow: none;
+  // }
+}
